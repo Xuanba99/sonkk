@@ -11,13 +11,13 @@
 }
 .menu li a{
   text-decoration: none;
-  color: black;
+  color: #ffff;
   font-size: 20px;
   font-weight: 500;
    
 }
 .menu li a:hover{
-  color:#ffff;
+  color:black;
    
   
 }
@@ -35,14 +35,15 @@
   margin-top: 20px;
 }
 .header{
-  background-color: cadetblue;
+  background-color: #cd1818;
   height: 80px;
   position: relative;
+
  
 }
 .main-menu{
   position: relative;
- top:20px;
+ top:-30px;
 }
 .nameOfSite h2 a{
   text-decoration: none;
@@ -59,11 +60,13 @@
   100%{left: 0px;opacity: 1;}
 }
 .slider img{
-  height: 400px;
+  height: 300px;
   width: 100%;
+  margin-left: 15px;
 }
  
 .slider{
+  position: relative;
   width: 80%;
   margin: 0 auto;
 }
@@ -72,14 +75,18 @@
   box-shadow: 2px 2px 5px gray;
   padding: 22px 4px;
   position: relative;
-  top:-250px;
+  top:-180px;
   opacity: 0.5;
 }
 .btnslider:hover{
   opacity: 1;
 }
-.next{
-  left: 1150px;
+
+.next {
+  left: 797px;
+}
+.prev{
+  left: 13px;
 }
 .main-footer{
   background-color: #5f9ea0;
@@ -96,3 +103,55 @@
   width: 80%;
   margin:0 auto;
 }
+.search{
+  position: relative;
+  top: 20px;  
+  left: 400px;
+  width: 300px;
+}
+.ant-btn-primary{
+  background-color: black !important;
+  border-color: black !important;
+}
+.menusub{
+  position: absolute;
+width: 100%;
+  background-color: black;
+  margin:0 auto;
+  height: 40px;
+
+}
+.sub-nav li{
+  float: left;
+  margin-left: 40px;
+  padding: 4px 40px;
+}
+.sub-nav li a{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: #ffff;
+}
+.sub-nav li:hover{
+  background-color: gray;
+}
+.sub-nav{
+  margin-top:-10px;
+  list-style: none;
+}
+.item-menu{
+  
+  width: 50%;
+  margin: 0 auto;
+}
+.advantage{
+  position: relative;
+  right: 80px;
+  
+
+}
+.ad-img2{
+  margin-top: 17px;
+}
+.slider-father{
+  margin-top: 50px;
+}
+
