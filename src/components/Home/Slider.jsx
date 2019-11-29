@@ -10,8 +10,11 @@ function Slider() {
             <div>
             <img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/cdn.fptshop.com.vn/Uploads/Originals/2019/11/25/637102405422254673_banner-BlackFriday-H1-2X.png"/>
             </div>
+            <div className="btnChangeimg">
             <button className="btnslider prev">Prev</button>
             <button className="btnslider next">Next</button>
+            </div>
+          
         
             </div>
         </Col>

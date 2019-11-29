@@ -3,6 +3,10 @@
   padding: 0;
 
 }
+.body{
+  background-color:#f6f6f6;
+  height: 2100px;
+}
 .menu li{
   float: left;
   margin-left: 40px;
@@ -75,8 +79,19 @@
   box-shadow: 2px 2px 5px gray;
   padding: 22px 4px;
   position: relative;
-  top:-180px;
+  top:120px;
   opacity: 0.5;
+}
+.btnChangeimg{
+  height: 300px;
+  opacity: 0;
+  z-index: 1;
+  top: 2px;
+  width: 100%;
+  position: absolute;
+}
+.btnChangeimg:hover{
+  opacity: 1;
 }
 .btnslider:hover{
   opacity: 1;
@@ -89,14 +104,15 @@
   left: 13px;
 }
 .main-footer{
-  background-color: #5f9ea0;
+  background-color: #ffff;
   
 }
-.main-footer ,.help-footer, .main-menu1{
+.main-footer ,.help-footer, .main-menu1, .main-menu2{
   float: left;
 }
 .main-footer{
   width: 100%;
+  margin-top:500px;
   height: 250px;
 }
 .content-footer{
@@ -154,4 +170,64 @@ width: 100%;
 .slider-father{
   margin-top: 50px;
 }
+.main-advantage{
+  position: relative;
+  top:15px;
+}
+.main-advantage ,.ad{
+  width: 80%;
+  margin:0 auto;
+}
+.gutter-row{
+  background: transparent;
+}
+ .img-item{
+   height: 220px;
+ }
 
+.list-product{
+  margin-top: 10px;
+}
+.List-item{
+   
+  margin: 0 auto;
+}
+.space-item{
+  width: 80%;
+  margin: 0 auto;
+}
+.gutter-box {
+  background: #ffff;
+  padding: 5px 0 ;
+}
+ .newphone{
+   margin-top: 40px;
+ }
+ .menu-footer li{
+   list-style: none;
+ }
+ .menu-footer li a{
+ 
+ font-size: 20px;
+}
+.menu-footer li a:hover{
+  color: black;
+ }
+ .main-menu1{
+  position: relative;
+  left: 150px;
+  top:50px;
+ }
+ .help-footer{
+  position: relative;
+  top:15px;
+ }
+ .help-footer label{
+   font-size: 23px;
+   color: brown;
+ }
+ .main-menu2{
+  position: relative;
+  left: 500px;
+  top:50px;
+ }
