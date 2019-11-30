@@ -92,7 +92,6 @@ class Menu extends React.Component{
                     <li> <Link to="/">Trang chủ</Link></li>
                     <li><a href=""> <Link to="/lien-he">Cửa hàng</Link> </a></li>
                     <li><a href="#">Dịch vụ</a></li>
-                    
                     <li>  <Link to="/lien-he">Liên hệ</Link> </li>
                   </ul> 
               </div>
