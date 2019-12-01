@@ -31,6 +31,7 @@ class Contact extends React.Component{
 
 
     handleSubmit=(evt)=>{
+        var patt =/^[a-z][a-z0-9_\.]{2,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/;
         var errMail ="";
         var errName ="";
         if(this.state.name===""){
@@ -39,8 +40,8 @@ class Contact extends React.Component{
             errName=""
             console.log(this.state);
         }
-        if(!this.state.email.includes("@")){
-            errMail="Vui lòng điền Gmail của bạn";
+        if(patt.test(this.state.email) ==false){
+            errMail="Vui lòng điền đúng định dang mail";
         }else{
             errMail=""
             console.log(this.state);
@@ -101,7 +102,7 @@ class Contact extends React.Component{
                             <tr>
                                 <label>Vấn đề của bạn</label>
                                 <td><input type="text" 
-                                        placeholder="Đặt hàng không được"/></td>
+                                        placeholder="Vd:Đặt hàng không được"/></td>
                             </tr>
                             <br/> 
                             <tr>

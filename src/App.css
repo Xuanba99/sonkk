@@ -21,12 +21,10 @@
 }
 .menu li a:hover{
   color:black;
-   
-  
 }
 .menu{
   list-style: none;
-  margin-left: 60%;
+  margin-left: 52%;
   
 }
 .nameOfSite{
