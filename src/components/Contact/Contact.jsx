@@ -1,7 +1,7 @@
 import React from 'react';
 import Menu from '../Home/Menu';
 import Footer from '../Footer/Footer';
-import Imagecontact from '../images/contact.jpg';
+import Imagecontact from '../../images/contact.jpg';
 import Introcontact from './Introcontact';
 import './css/contact.css';
  

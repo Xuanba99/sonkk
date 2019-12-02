@@ -9,14 +9,14 @@ class Menusub extends React.Component{
                 <ul className="sub-nav">
                     <li className="itemmm">
                          <a href="#"><Icon type="shake" className="iconmenu"/>ĐIỆN THOẠI</a> 
-                         <div className="item-dienthoai">
-                            <ul>
-                                <li>Iphone 7</li>
-                                <li>Iphone 8</li>
-                                <li>Iphone X</li>
-                                <li>Iphone XI</li>
-                            </ul>
-                        </div>
+                            <div className="item-dienthoai">
+                                <ul>
+                                    <li>Iphone 7</li>
+                                    <li>Iphone 8</li>
+                                    <li>Iphone X</li>
+                                    <li>Iphone XI</li>
+                                </ul>
+                            </div>
                     </li>
                     <li  className="itemmm">
                      <a href="#"><Icon type="desktop"  className="iconmenu"/> LAPTOP</a>
