@@ -2,6 +2,7 @@ import React from 'react';
 import Menu from '../Home/Menu';
 import Footer from '../Footer/Footer';
 import Imagecontact from '../images/contact.jpg';
+import Introcontact from './Introcontact';
 import './css/contact.css';
  
 import {Row ,Col } from 'antd';
@@ -123,8 +124,8 @@ class Contact extends React.Component{
 
                     </Col>
                     <Col span={12}>
-
-                        
+                      <Introcontact/>
+                                
                     </Col>
                 </Row>
 

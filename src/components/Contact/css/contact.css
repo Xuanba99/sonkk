@@ -43,3 +43,30 @@ label{
     position: relative;
     top: -400px;
 }
+.title-contactt{
+    font-weight: 500;
+    font-size: 18px;
+}
+.iconsocial{
+    font-size: 30px;
+    transition: all 0.2 ease;
+     
+}
+.facebook{
+    color: #4267b2;
+}
+.apple{
+    color: gray;
+}
+.youtube{
+    color: #ff0000;
+}
+.facebook:hover{
+    font-size: 33px;
+}
+.apple:hover{
+    font-size:  33px;
+}
+.youtube:hover{
+    font-size:  33px;
+}
