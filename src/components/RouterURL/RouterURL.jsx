@@ -8,6 +8,9 @@ import {
 import Home from '../Home/Home';
 import Contact from '../Contact/Contact';
 import Store from '../Store/Store';
+import About from '../Aboutus/About';
+import Blog from '../Blog/Blog';
+
 
 
 class RouterURL extends  React.Component{
@@ -18,6 +21,8 @@ class RouterURL extends  React.Component{
                      <Route exact path="/" component={Home}/>
                      <Route path="/cua-hang" component={Store}/>
                      <Route path="/lien-he" component={Contact}/>
+                     <Route path="/gioi-thieu" component={About}/>
+                     <Route path="/tin-tuc" component={Blog}/>
                 </Switch>
             </Router>
 

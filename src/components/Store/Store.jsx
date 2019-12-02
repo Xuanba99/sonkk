@@ -3,15 +3,12 @@ import Menu from '../Home/Menu';
 import Footer from '../Footer/Footer';
 import ProductList from '../Home/ProductList';
  
- 
 
 class  Store extends React.Component {
   render(){
     return (
         <div className='body1'>
              <Menu/>
-
-
              <div >
              <ProductList/>
              <ProductList/>
