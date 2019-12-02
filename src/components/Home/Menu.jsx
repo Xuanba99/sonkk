@@ -87,13 +87,14 @@ class Menu extends React.Component{
                   </AutoComplete>
                 </div>
               </div>
-              <div className="main-menu"> 
+              <div className="main-menu">
+                  
                   <ul className="menu">
-                    <li> <Link to="/">Trang chủ</Link></li>
-                    <li><a href=""> <Link to="/lien-he">Cửa hàng</Link> </a></li>
+                    <li><Link to="/">Trang chủ</Link></li>
+                    <li><a href=""> <Link to="/cua-hang">Cửa hàng</Link> </a></li>
                     <li><a href="#">Giới thiệu</a></li>
                     <li><a href="#">Dịch vụ</a></li>
-                    <li>  <Link to="/lien-he">Liên hệ</Link> </li>
+                    <li><Link to="/lien-he">Liên hệ</Link> </li>
                   </ul> 
               </div>
           </div>

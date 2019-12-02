@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Home from '../Home/Home';
 import Contact from '../Contact/Contact';
+import Store from '../Store/Store';
 
 
 class RouterURL extends  React.Component{
@@ -15,6 +16,7 @@ class RouterURL extends  React.Component{
             <Router>
                 <Switch>
                      <Route exact path="/" component={Home}/>
+                     <Route path="/cua-hang" component={Store}/>
                      <Route path="/lien-he" component={Contact}/>
                 </Switch>
             </Router>

@@ -78,7 +78,6 @@ class Contact extends React.Component{
                                             placeholder="Nguyễn Văn A"/>
                                 </td> 
                                
-                               
                             </tr>
                             <tr> 
                                 <td></td>
