@@ -1,5 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'antd';
+import {Link} from 'react-router-dom';
+import { formatCountdown } from 'antd/lib/statistic/utils';
+ 
 
 class ItemProduct extends React.Component {
     render(){
@@ -11,7 +14,9 @@ class ItemProduct extends React.Component {
                             <Row>
                                 <Col span={9} offset={1}><h4>Giá: 19.000.000</h4>
                                 <p>Mô tả: 4GB RAM <br/> 64GB</p>
-                                <input type="button" value="Xem chi tiết"/>
+                                <button className="btnDetail">  <Link to="/chi-tiet">CHI TIẾT</Link> </button> 
+                                {/* <input  className="btnDetail" value='asđ' /> */}
+                                 
                                 </Col>
                                 <Col span={9}><img className="img-item" src="https://halomobile.vn/wp-content/uploads/2019/05/iphone-xi-min.png"/></Col>
                             </Row>
@@ -23,5 +28,9 @@ class ItemProduct extends React.Component {
     }
  
 }
+
+ 
+ 
+ 
 
 export default ItemProduct;

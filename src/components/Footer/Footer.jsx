@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row ,Col} from 'antd';
+import { Link} from 'react-router-dom';
 class Footer extends React.Component{
     render(){
         return(
@@ -11,9 +12,9 @@ class Footer extends React.Component{
                                 <label>Hỗ trợ khách hàng</label>
                                 <ul className="menu-footer">
                                     <li><a href="#">Tổng đài hỗ trợ</a> </li>
-                                    <li><a href="#">Giới thiệu</a> </li>
+                                    <li><a href="#"><Link to="/gioi-thieu">Giới thiệu</Link></a></li>
                                     <li><a href="#">Bảo hành</a> </li>
-                                    <li><a href="#">Cửa hàng</a> </li>
+                                    <li><a href="#"><Link to="/cua-hang">Cửa hàng</Link> </a></li>
                                 </ul>
 
                             </div>
@@ -21,10 +22,10 @@ class Footer extends React.Component{
 
                             <div className="main-menu1"> 
                                 <ul className="menu-footer">
-                                    <li><a href="#">Trang chủ</a></li>
-                                    <li><a href="#">Cửa hàng</a></li>
-                                    <li><a href="#">Dịch vụ</a></li>
-                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#"><Link to="/">Trang chủ</Link> </a></li>
+                                    <li><a href="#"><Link to="/cua-hang">Cửa hàng</Link> </a></li>
+                                    <li><a href="#"><Link to="/gioi-thieu">Giới thiệu</Link></a></li>
+                                    <li><a href="#"><Link to="/lien-he">Liên hệ</Link></a></li>
                                 </ul> 
                             </div>
 

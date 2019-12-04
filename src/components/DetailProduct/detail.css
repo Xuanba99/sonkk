@@ -1,0 +1,30 @@
+.detail-body{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffff;
+}
+.imageproduct{
+    height: 500px;
+    cursor: crosshair;
+}
+.div-nameofproduct{
+    border-bottom: 1px solid #eee;
+}
+.price{
+    font-weight: bold;
+}
+.shipnow{
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    background-color: #eee;
+    width: 55%;
+}
+.dashboard{
+    color: red;
+    font-size: 20px;
+}
+.btnbuy-addtocart{
+    border: 1px solid black;
+    
+     
+}

@@ -6,10 +6,12 @@ import {
   Link
 } from "react-router-dom";
 import Home from '../Home/Home';
+import Detail from '../DetailProduct/Detail';
 import Contact from '../Contact/Contact';
 import Store from '../Store/Store';
 import About from '../Aboutus/About';
 import Blog from '../Blog/Blog';
+ 
 
 
 
@@ -23,6 +25,7 @@ class RouterURL extends  React.Component{
                      <Route path="/lien-he" component={Contact}/>
                      <Route path="/gioi-thieu" component={About}/>
                      <Route path="/tin-tuc" component={Blog}/>
+                     <Route path="/chi-tiet" component={Detail}/>
                 </Switch>
             </Router>
 

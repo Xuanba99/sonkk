@@ -57,7 +57,7 @@ class Menu extends React.Component{
           
             <div className="header">
               <div className="nameOfSite">
-                <h2><a href="#">PHUKIEN APPLE</a> </h2>
+                <h2><a href="#"><Link to="/">TECHPHONE</Link></a></h2>
               </div>
 
               <div className="search">
