@@ -21,15 +21,10 @@ class Detail extends React.Component{
                         <Col span={12}>
                             <img className="imageproduct" src={Iphone11}/>
                         </Col>
-                        <Col span={12}>
+                        <Col span={12} >
                                 <h1 className="price">33.000.000</h1>
                                 <p className="shipnow"><Icon className="dashboard" type="dashboard" /> SẢN PHẨM GIAO HÀNG TRONG 1 GIỜ</p>
-                                <div className="btnbuy-addtocart">
-                                    <a href="">MUA NGAY</a>
-                                </div>
-                                ok
-
-                                
+                                <input className="btnbuy-addtocart" type="button" value="MUA NGAY"/>
 
                         </Col>
                     </Row>

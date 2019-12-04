@@ -24,7 +24,16 @@
     font-size: 20px;
 }
 .btnbuy-addtocart{
-    border: 1px solid black;
-    
-     
+    border: 1px solid r#fc0505;
+    padding: 15px 112px;
+    font-weight: bold;
+    color: #ffff;
+    font-size: 20px;
+    background-color: #fc0505; 
+}
+.btnbuy-addtocart:hover{
+    background-color: #cd1818;
+}
+.Col-detailshort{
+    border-right: 1px solid black;
 }
