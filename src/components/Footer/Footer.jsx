@@ -11,10 +11,10 @@ class Footer extends React.Component{
                             <div className="help-footer">
                                 <label>Hỗ trợ khách hàng</label>
                                 <ul className="menu-footer">
-                                    <li><a href="#">Tổng đài hỗ trợ</a> </li>
-                                    <li><a href="#"><Link to="/gioi-thieu">Giới thiệu</Link></a></li>
+                                    <li><a href="#">Chính sách đổi trả</a> </li>
+                                    <li> <Link to="/gioi-thieu">Giới thiệu</Link> </li>
                                     <li><a href="#">Bảo hành</a> </li>
-                                    <li><a href="#"><Link to="/cua-hang">Cửa hàng</Link> </a></li>
+                                    <li><Link to="/cua-hang">Cửa hàng</Link> </li>
                                 </ul>
 
                             </div>
@@ -22,10 +22,10 @@ class Footer extends React.Component{
 
                             <div className="main-menu1"> 
                                 <ul className="menu-footer">
-                                    <li><a href="#"><Link to="/">Trang chủ</Link> </a></li>
-                                    <li><a href="#"><Link to="/cua-hang">Cửa hàng</Link> </a></li>
-                                    <li><a href="#"><Link to="/gioi-thieu">Giới thiệu</Link></a></li>
-                                    <li><a href="#"><Link to="/lien-he">Liên hệ</Link></a></li>
+                                    <li><Link to="/">Trang chủ</Link> </li>
+                                    <li> <Link to="/cua-hang">Cửa hàng</Link> </li>
+                                    <li> <Link to="/gioi-thieu">Giới thiệu</Link> </li>
+                                    <li> <Link to="/lien-he">Liên hệ</Link> </li>
                                 </ul> 
                             </div>
 

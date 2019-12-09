@@ -7,6 +7,7 @@ class Introcontact extends React.Component{
         return(
             <div>
             <table >
+                <tbody>
                 <tr  >
                     <td className="title-contactt"  >Địa chỉ:</td>
                     <td>Chúng tôi chỉ bán online</td>
@@ -26,6 +27,8 @@ class Introcontact extends React.Component{
                     
                    
                 </tr>
+                </tbody>
+                
             </table>
 
         </div>

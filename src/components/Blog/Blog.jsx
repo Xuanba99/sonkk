@@ -3,31 +3,40 @@ import Menu from '../Home/Menu';
 import Footer from '../Footer/Footer';
 import Itemblog from './Itemblog';
 import Blogmain from './Blogmain';
+import Advertise from './Advertise';
 import { Row, Col } from 'antd';
 import './Blog.css';
  
 
 class Blog extends React.Component {
+  constructor(props){
+    super(props);
+    this.URL='http://localhost:1903/admin/';
+    this.state={
+        blogs:[],
+        isLoaded:false, 
+        advertise:[]
+    }  
+}
   render(){
     return (
         <div className='body1'>
              <Menu/>
               <div className="advantage-blog">
-                <img src="https://www.suzuki.com.vn/images/GSX/Gsx-featurebanner1.jpg"  alt="quảng cáo xe cub"/>
+              
+             <Advertise advertise={this.state.advertise} isLoaded={this.state.isLoaded}/>
 
                 <hr style={{marginTop:20}}/>
                 <Row  >
                     <Col span={8}>
-                      <Itemblog/>
-                      <Itemblog/>
-                      <Itemblog/>
-                      <Itemblog/>
+                      <Itemblog datablog={this.state.blogs} isLoaded={this.state.isLoaded}/>
+                     
                     </Col>
 
 
 
                     <Col span={16}>
-                      <Blogmain/>
+                      <Blogmain datablog={this.state.blogs} isLoaded={this.state.isLoaded}/>
 
                     </Col>
                 </Row>
@@ -39,6 +48,26 @@ class Blog extends React.Component {
         </div>
     );
   }
+  componentDidMount=()=>{
+    fetch(this.URL)
+    .then (res=>res.json())
+    .then(json=>{
+        this.setState({
+            isLoaded:true,
+            blogs:json,
+        })
+    });
+    fetch('http://localhost:1903/admin/advertise/')
+    .then (res=>res.json())
+    .then(json=>{
+        this.setState({
+            isLoaded:true,
+            advertise:json,
+        })
+    });
+     
+    
+}
 }
 
 export default Blog;

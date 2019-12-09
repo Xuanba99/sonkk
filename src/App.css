@@ -95,7 +95,7 @@
 }
 
 .next {
-  left: 797px;
+  left: 825px;
 }
 .prev{
   left: 13px;
@@ -285,4 +285,7 @@ width: 100%;
 }
 .btnDetail a{
   color: #ffff;
+}
+.shopping-cart{
+  font-size: 30px;
 }

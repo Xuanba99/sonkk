@@ -11,6 +11,8 @@ import Contact from '../Contact/Contact';
 import Store from '../Store/Store';
 import About from '../Aboutus/About';
 import Blog from '../Blog/Blog';
+import Admin from '../admin/Admin';
+import Addblog from '../admin/Addblog';
  
 
 
@@ -26,6 +28,8 @@ class RouterURL extends  React.Component{
                      <Route path="/gioi-thieu" component={About}/>
                      <Route path="/tin-tuc" component={Blog}/>
                      <Route path="/chi-tiet" component={Detail}/>
+                     <Route path="/admin" component={Admin}/>
+                     <Route path="/them-bai-viet" component={Addblog}/>
                 </Switch>
             </Router>
 

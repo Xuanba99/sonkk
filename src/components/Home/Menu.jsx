@@ -57,7 +57,7 @@ class Menu extends React.Component{
           
             <div className="header">
               <div className="nameOfSite">
-                <h2><a href="#"><Link to="/">TECHPHONE</Link></a></h2>
+                <h2> <Link to="/">TECHPHONE</Link> </h2>
               </div>
 
               <div className="search">
@@ -91,10 +91,12 @@ class Menu extends React.Component{
                   
                   <ul className="menu">
                     <li><Link to="/">Trang chủ</Link></li>
-                    <li><a href=""> <Link to="/cua-hang">Cửa hàng</Link> </a></li>
-                    <li><a href=""> <Link to="/gioi-thieu">Giới thiệu</Link> </a></li>
-                    <li><a href=""> <Link to="/tin-tuc">Tin tức</Link> </a></li>
+                    <li>  <Link to="/cua-hang">Cửa hàng</Link>  </li>
+                    <li>  <Link to="/gioi-thieu">Giới thiệu</Link> </li>
+                    <li>  <Link to="/tin-tuc">Tin tức</Link>  </li>
                     <li><Link to="/lien-he">Liên hệ</Link> </li>
+                    <li><Link to="/gio-hang"> <Icon className="shopping-cart" type="shopping-cart" /></Link> </li>
+                    
                   </ul> 
               </div>
           </div>

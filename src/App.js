@@ -7,9 +7,9 @@ import RouterURL from './components/RouterURL/RouterURL';
 
 function App() {
   return (
-      <div>
+    
       <RouterURL></RouterURL>
-      </div>
+      
   );
 }
 

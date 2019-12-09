@@ -1,17 +1,58 @@
 import React from 'react';
-import { Row, Col } from 'antd';
+import { Row, Col,Icon } from 'antd';
 class Itemblog extends React.Component {
+    
+    // constructor(props){
+    //     super(props);
+    //     this.URL=' http://localhost:1903/admin/';
+    //     this.state={
+    //         blogs:[],
+    //         isLoaded:false
+    //     }  
+    // }
+     
     render(){
-        return(
-            <Row className="content-blog">
-                <Col className="img-blog" span={11}>
-                <img src="http://genknews.genkcdn.vn/thumb_w/660/2019/12/2/photo-1-15752739316061535113609.jpg" alt="smartphone"/>
-
-                </Col>
-                <Col span={12} offset={1}><h3>Google chơi chiêu giống Vsmart: hoàn tiền 100 USD để "an ủi" người dùng đã mua Pixel 4 với giá 799 USD</h3></Col>
-            </Row> 
-        );
+        // var {isLoaded,blogs}=this.state;
+        var blogs = this.props.datablog;
+        var isLoaded = this.props.isLoaded;
+        if(!isLoaded){
+            return <div>Loading <Icon type="loading" /></div>
+        }else {
+            return(
+                <div> 
+                {blogs.map(blog=>(
+                    <Row className="content-blog" key={blog._id}>
+                        <Col className="img-blog" span={11}>
+                            <a href={'detail/{blog._id }'}> 
+                            <img src={`data:image/png;base64,${blog.image}`} alt="smartphone"/>
+                            </a>
+                        </Col>
+                        <Col span={12} offset={1}>
+                        <a href={'detail/{blog._id }'}> 
+                        <h3>{blog.name}</h3>
+                        </a>
+                        </Col>
+                        
+                  </Row> 
+                ))}
+                </div>
+                
+            );
+        }
+         
     }
+    // componentDidMount=()=>{
+    //     fetch(this.URL)
+    //     .then (res=>res.json())
+    //     .then(json=>{
+    //         this.setState({
+    //             isLoaded:true,
+    //             blogs:json,
+    //         })
+    //     })
+         
+        
+    // }
 
 }
 export default Itemblog;

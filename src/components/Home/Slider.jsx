@@ -3,7 +3,7 @@ import Ad1 from '../../images/advantage1.jpg';
 import Ad2 from '../../images/advantage2.jpg';
 import Ad3 from '../../images/advantage3.jpg';
 import Ad4 from '../../images/advantage4.jpg';
-import { Row, Col } from 'antd';
+import { Row, Col,Icon } from 'antd';
  
 class Slider extends React.Component {
     constructor(props){
@@ -41,8 +41,8 @@ class Slider extends React.Component {
                       {Advantage}
                   </div>
                   <div className="btnChangeimg">
-                  <button className="btnslider prev" onClick={this.PrevImage}>Prev</button>
-                  <button className="btnslider next" onClick={this.NextImage}>Next</button>
+                  <button className="btnslider prev" onClick={this.PrevImage}><Icon type="left" /></button>
+                  <button className="btnslider next" onClick={this.NextImage}><Icon type="right" /></button>
                   </div>
                 
               
