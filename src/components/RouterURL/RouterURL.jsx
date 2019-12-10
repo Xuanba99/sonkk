@@ -13,6 +13,7 @@ import About from '../Aboutus/About';
 import Blog from '../Blog/Blog';
 import Admin from '../admin/Admin';
 import Addblog from '../admin/Addblog';
+import Cart from '../Cart/Cart';
  
 
 
@@ -30,6 +31,7 @@ class RouterURL extends  React.Component{
                      <Route path="/chi-tiet" component={Detail}/>
                      <Route path="/admin" component={Admin}/>
                      <Route path="/them-bai-viet" component={Addblog}/>
+                     <Route path="/gio-hang" component={Cart}/>
                 </Switch>
             </Router>
 

@@ -11,9 +11,7 @@ class  Store extends React.Component {
              <Menu/>
              <div >
              <ProductList/>
-             <ProductList/>
-             <ProductList/>
-             <ProductList/>
+           
 
              </div>
              <div className="footerContact">

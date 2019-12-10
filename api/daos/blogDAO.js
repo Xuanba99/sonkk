@@ -8,7 +8,7 @@ var ProductDAO = {
             MongoClient.connect(url, function (err, db) { 
                 if(err) throw err;
                 var dbo= db.db("banphukien");
-                dbo.collection("product").insertOne(product, function(err, res){
+                dbo.collection("blog").insertOne(product, function(err, res){
                     if(err) return  reject(err);
                     resolve(res.insertedCount>0? true: false);
                     
@@ -19,9 +19,11 @@ var ProductDAO = {
         // return false;
     } 
     // getAll:function(){
-    //     return new Promise(function(resolve, reject){       
+    //     return new Promise(function(resolve, reject){
+            
     //         MongoClient.connect(url, function (err, db) { 
     //             if(err) throw err;
+               
     //             var dbo= db.db("banphukien");
     //             var query={};
     //             dbo.collection("blog").find(query).toArray(function(err, res){

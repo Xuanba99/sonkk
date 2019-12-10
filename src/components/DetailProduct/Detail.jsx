@@ -4,6 +4,7 @@ import Footer from '../Footer/Footer';
 import './detail.css';
 import { Row, Col , Icon} from 'antd';
 import Iphone11 from '../../images/iphone11.jpg';
+import {Link} from 'react-router-dom';
 
 class Detail extends React.Component{
     render(){
@@ -24,7 +25,8 @@ class Detail extends React.Component{
                         <Col span={12} >
                                 <h1 className="price">33.000.000</h1>
                                 <p className="shipnow"><Icon className="dashboard" type="dashboard" /> SẢN PHẨM GIAO HÀNG TRONG 1 GIỜ</p>
-                                <input className="btnbuy-addtocart" type="button" value="MUA NGAY"/>
+                               
+                                <button  className="btnbuy-addtocart"><Link to="/gio-hang">MUA NGAY</Link></button>
 
                         </Col>
                     </Row>

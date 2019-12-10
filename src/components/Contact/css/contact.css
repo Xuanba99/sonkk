@@ -17,6 +17,11 @@ body{
     position: relative;
     top:-300px;
     text-align: center;
+    animation-name:dichuyentitlecontact ;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    position: relative;
+    transition: all 0.2 ease;
 }
 .form{
     width: 80%;
@@ -55,8 +60,8 @@ label{
 .facebook{
     color: #4267b2;
 }
-.apple{
-    color: gray;
+.instagram{
+    color: orangered;
 }
 .youtube{
     color: #ff0000;
@@ -70,3 +75,9 @@ label{
 .youtube:hover{
     font-size:  33px;
 }
+@keyframes dichuyentitlecontact {
+    0%{left:200px;}
+    50%{left:200px;}
+    10%{left:0px;}
+}
+

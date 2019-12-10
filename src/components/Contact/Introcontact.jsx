@@ -1,37 +1,31 @@
 import React from 'react';
-import { Icon } from 'antd';
+import { Icon,Row,Col } from 'antd';
 
 
 class Introcontact extends React.Component{
     render(){
         return(
             <div>
-            <table >
-                <tbody>
-                <tr  >
-                    <td className="title-contactt"  >Địa chỉ:</td>
-                    <td>Chúng tôi chỉ bán online</td>
-                </tr>
-                <tr>
-                    <td className="title-contactt">Số điện thoại:</td>
-                    <td>1900 12345</td>
-                    
-                </tr>
-                <tr>
-                    <td className="title-contactt">Gmail:</td>
-                    <td>Xuanba1903@gmail.com</td>
-                </tr>
-                <tr>
-                    <td className="title-contactt">Theo dõi chúng tôi tại:</td>
-                    <td><Icon type="facebook" className="iconsocial facebook" /><Icon type="apple" className="iconsocial apple"/><Icon type="youtube" className="iconsocial youtube"/></td>
-                    
-                   
-                </tr>
-                </tbody>
+            <Row>
+            <h2>Thông tin liên hệ</h2>
+                <Col span={12}>Địa chỉ <br/>
+                Email <br/>
+                Số điện thoại <br/>
+                Theo dõi chúng tôi tại <br/>
                 
-            </table>
-
-        </div>
+                </Col>
+                <Col  span={12}>
+                    Chúng tôi chỉ có trên mạng<br/>
+                    Xuanba1903@gmail.com <br/>
+                    0328 265 710 <br/>
+                    <Icon class="iconsocial" type="facebook"/>
+                    <Icon  class="iconsocial" type="youtube"/>
+                    <Icon  class="iconsocial" type="instagram"/>
+                </Col>
+              
+            </Row>
+           
+          </div>
         );
     }
 }

@@ -4,14 +4,14 @@ import Item from './ItemProduct';
 
 class ProductList extends React.Component {
     render(){
+          
         return (
             <div className="list-product">
                
                 <div className="space-item" >
                     <Row gutter={16}> 
-                        <Item />
-                        <Item />
-                        <Item />
+                        <Item products={this.props.products} isLoaded={this.props.isLoaded}/>
+                        
                     </Row>
 
                 </div>

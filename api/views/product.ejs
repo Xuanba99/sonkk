@@ -16645,29 +16645,55 @@
               <!--   quan li san pham -->
 
       <h1 class="text-center">Danh sách sản phẩm</h1>  
-      <table>
+      <table border="1">
+        <tr>
+          <th>ID</th>
+          <th>Tên sản phẩm</th>
+          <th>Hãng</th>
+          <th>Chi tiết</th>
+          <th>Giá</th>
+          <th>Hình ảnh</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
         
       </table>
+      <br/>
        
-    <form action="addblog" method="POST" role="form" enctype="multipart/form-data">
+    <form action="product" method="POST" role="form" enctype="multipart/form-data">
         <table>
                 
             <tr>
-                <td>Name</td>
+                <td>Tên sản phẩm</td>
                 <td><input type="text" name="txtName" /></td>           
             </tr>
+
             <tr>
-                <td>Content</td>
-                <td><input type="text"   name="txtContent" /></td>
+                <td>Hãng</td>
+                <td><input type="text"   name="txtHang" /></td>
+            </tr>
+            <tr>
+              <td>Chi tiết</td>
+              <td><input type="text"   name="txtDetail" /></td>
+            </tr>
+            <tr>
+              <td>Giá</td>
+              <td><input type="text"   name="tXtPrice" /></td>
             </tr>
            
             <tr>
-                <td>Image</td>
+                <td>Hình ảnh</td>
                 <td><input type="file"  name="fileImage"  /></td>
             </tr>
             <tr>
                 <td> </td>
-                <td><input type="submit" value="Add new"  /></td>
+                <td><input type="submit" value="Thêm sản phẩm"  /></td>
             </tr>
         </table>          
     </form>
