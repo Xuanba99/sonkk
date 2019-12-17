@@ -57,7 +57,7 @@ class Menu extends React.Component{
           
             <div className="header">
               <div className="nameOfSite">
-                <h2> <Link to="/">TECHPHONE</Link> </h2>
+                <h2> <Link to="/">MOBILE KINGDOM</Link> </h2>
               </div>
 
               <div className="search">

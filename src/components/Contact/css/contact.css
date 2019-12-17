@@ -18,21 +18,30 @@ body{
     top:-300px;
     text-align: center;
     animation-name:dichuyentitlecontact ;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
-    position: relative;
-    transition: all 0.2 ease;
+    
+    transition: ease-in-out;
+}
+.txtContact{
+    border: none;
+    border:1px solid #b7b7b7;
 }
 .form{
     width: 80%;
     margin:0 auto;
 }
 .btnsubmit{
-    padding: 4px 25px;
+    padding: 6px 35px;
     background-color: #47ce40;
     border-radius: 5px;
     color: #ffff;
     font-weight: 500;
+    border: none;
+}
+.btnsubmit:hover{
+    background-color: #33b72c;
+
 }
 input[type="text"]{
     padding: 4px 100px;
@@ -46,7 +55,7 @@ label{
 }
 .footerContact {
     position: relative;
-    top: -400px;
+    
 }
 .title-contactt{
     font-weight: 500;
@@ -57,16 +66,53 @@ label{
     transition: all 0.2 ease;
      
 }
+ 
+ 
+@keyframes dichuyentitlecontact {
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.btnSocial{
+   padding: 5px 15px;
+   border: none;
+}
+.youtube, .instagram{
+    margin-left: 20px;
+}
+ 
 .facebook{
-    color: #4267b2;
+    color: #ffff;
+    background-color:  #4267b2;
+    font-size: 25px;
 }
 .instagram{
-    color: orangered;
+    color: #ffff;
+    background-image: linear-gradient(-90deg,red, #b3318a);
+    font-size: 25px;
 }
 .youtube{
-    color: #ff0000;
+    color: #ffff;
+    background-color: #ff0000;
+    font-size: 25px;
+   
 }
 .facebook:hover{
+    
+    background-color:  #3359a5
+  
+}
+.instagram:hover{
+    
+    background-image: linear-gradient(-90deg,#d61313, #b3318a);
+     
+}
+.youtube:hover{
+    
+    background-color:#ef1515;
+   
+   
+}
+/* .facebook:hover{
     font-size: 33px;
 }
 .apple:hover{
@@ -74,10 +120,5 @@ label{
 }
 .youtube:hover{
     font-size:  33px;
-}
-@keyframes dichuyentitlecontact {
-    0%{left:200px;}
-    50%{left:200px;}
-    10%{left:0px;}
-}
+} */
 

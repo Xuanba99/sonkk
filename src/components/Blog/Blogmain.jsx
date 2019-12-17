@@ -1,5 +1,7 @@
 import React from 'react';
 import { Row, Col, Icon } from 'antd';
+
+import {Link} from 'react-router-dom';
 class Itemblog extends React.Component {
     render() {
         var blogs = this.props.datablog;
@@ -24,7 +26,7 @@ class Itemblog extends React.Component {
                             <Row>
                                 <Col span={22} offset={2}>
                                     <a href={'detail/{blog._id }'}>
-                                        <h3>{blog.name}</h3>
+                                    <h2><Link to={"doc-tin/"+blog._id}>{blog.name}</Link> </h2>
                                     </a>
                                 </Col>
                             </Row>

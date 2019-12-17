@@ -14,6 +14,7 @@ import Blog from '../Blog/Blog';
 import Admin from '../admin/Admin';
 import Addblog from '../admin/Addblog';
 import Cart from '../Cart/Cart';
+import Readnew from '../Readnew/Readnews';
  
 
 
@@ -28,10 +29,11 @@ class RouterURL extends  React.Component{
                      <Route path="/lien-he" component={Contact}/>
                      <Route path="/gioi-thieu" component={About}/>
                      <Route path="/tin-tuc" component={Blog}/>
-                     <Route path="/chi-tiet" component={Detail}/>
+                     <Route path="/chi-tiet/:id" component={Detail}/>
                      <Route path="/admin" component={Admin}/>
                      <Route path="/them-bai-viet" component={Addblog}/>
-                     <Route path="/gio-hang" component={Cart}/>
+                     <Route path="/gio-hang/:id" component={Cart}/>
+                     <Route path="/doc-tin/:id" component={Readnew}/>
                 </Switch>
             </Router>
 

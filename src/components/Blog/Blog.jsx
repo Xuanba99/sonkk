@@ -12,6 +12,7 @@ class Blog extends React.Component {
   constructor(props){
     super(props);
     this.URL='http://localhost:1903/admin/blog/';
+    
     this.state={
         blogs:[],
         isLoaded:false, 
@@ -42,7 +43,7 @@ class Blog extends React.Component {
                 </Row>
               </div>
 
-             <div className="footerContact">
+             <div className="footerBlog">
                 <Footer />
              </div>
         </div>

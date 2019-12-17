@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col,Icon } from 'antd';
+import { Link } from 'react-router-dom';
 class Itemblog extends React.Component {
     
     // constructor(props){
@@ -29,7 +30,7 @@ class Itemblog extends React.Component {
                         </Col>
                         <Col span={12} offset={1}>
                         <a href={'detail/{blog._id }'}> 
-                        <h3>{blog.name}</h3>
+                        <h3><Link to={"doc-tin/"+blog._id}>{blog.name}</Link> </h3>
                         </a>
                         </Col>
                         

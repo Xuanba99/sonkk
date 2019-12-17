@@ -1,5 +1,6 @@
 import React from 'react';
 import { Icon,Row,Col } from 'antd';
+import './css/contact.css';
 
 
 class Introcontact extends React.Component{
@@ -18,9 +19,12 @@ class Introcontact extends React.Component{
                     Chúng tôi chỉ có trên mạng<br/>
                     Xuanba1903@gmail.com <br/>
                     0328 265 710 <br/>
-                    <Icon class="iconsocial" type="facebook"/>
-                    <Icon  class="iconsocial" type="youtube"/>
-                    <Icon  class="iconsocial" type="instagram"/>
+                    <button  class="btnSocial facebook">  <Icon class="iconsocial" type="facebook"/></button>
+                    <button  class="btnSocial youtube">   <Icon  class="iconsocial" type="youtube"/></button>
+                    <button  class="btnSocial instagram">   <Icon  class="iconsocial" type="instagram"/></button>
+                   
+                   
+                    
                 </Col>
               
             </Row>

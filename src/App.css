@@ -109,7 +109,7 @@
 }
 .main-footer{
   width: 100%;
-  margin-top:100%;
+  margin-top:5%;
   height: 250px;
 }
 .content-footer{
@@ -188,9 +188,15 @@ width: 100%;
   margin-top:10px;
 }
 .img-item{
-   height: 220px;
-   width:210px;
+   height: 200px;
+   width:190px;
+   position: relative;
+   transition: all 0.2s linear;
 }
+.img-item:hover{
+  transform:scale(1.05);
+}
+
 
 .list-product{
   margin-top: 10px;
@@ -286,7 +292,7 @@ width: 100%;
   display: block;
 }
 .btnDetail{
-   
+   border: none;
   background-color: #ff0000;
   padding: 5px 20px;
   font-size: 14px;
@@ -298,3 +304,31 @@ width: 100%;
 .shopping-cart{
   font-size: 30px;
 }
+.pageDetail{
+  display: none;
+   
+}
+.list-product h1{
+  margin-left: 120px;
+}
+ 
+.hotnewsimg{
+  width: 393px;
+  height: 150px;
+  position: relative;
+  cursor: pointer;
+  top: 20px;
+}
+.padding-news-name{
+ position: absolute;
+ cursor: pointer;
+ 
+}
+.padding-news-name h3{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.space-blog{
+  background-color: #ffff;
+}
+ 

@@ -8,6 +8,9 @@ import Slider from './Slider';
 import Avantage from './Advantage';
 import Advantage from './Advantage';
 import ProductList from './ProductList';
+import Hotproduct from './Hotproduct';
+import Hotnews from './Hotnews';
+ 
 
 class Home extends React.Component {
   constructor(props){
@@ -15,7 +18,8 @@ class Home extends React.Component {
     this.URL='http://localhost:1903/admin/productapi/';
     this.state={
         isLoaded:false, 
-        products:[]
+        products:[],
+        blogs:[]
     }  
   }
 
@@ -35,8 +39,14 @@ class Home extends React.Component {
   
   
            <ProductList products={this.state.products} isLoaded={this.state.isLoaded}/>
+          <Hotproduct  products={this.state.products} isLoaded={this.state.isLoaded}/>
           
            </div>
+           <div className="space-item" >
+                <Row gutter={16}> 
+              <Hotnews blogs={this.state.blogs} isLoaded={this.state.isLoaded}/>
+              </Row>
+          </div>
            <div>
              <Footer/>
            </div>
@@ -54,7 +64,16 @@ class Home extends React.Component {
             products:json,
         })
     });
+    fetch("http://localhost:1903/admin/blog/")
+    .then (res=>res.json())
+    .then(json=>{
+        this.setState({
+            isLoaded:true,
+            blogs:json,
+        })
+    });
   }
+  
    
 }
 

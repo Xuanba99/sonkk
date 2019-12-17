@@ -11,7 +11,7 @@ class Advertise extends React.Component{
         }else{
             return(
                 <div>
-                    {advertise.map(adv =>(
+                    {advertise.slice(0,1).map(adv =>(
                         <div key={adv._id}>
                         <img src={`data:image/png;base64,${adv.image}`}  alt="quảng cáo xe cub"/>
                         </div>
